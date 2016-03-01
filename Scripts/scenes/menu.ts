@@ -4,7 +4,7 @@ module scenes {
         //PRIVATE INSTANCE VARIABLES ++++++++++++
         private _startButton: objects.Button;
         private _welcomeLabel: objects.Label;
-        
+        private _backgroundImage: createjs.Bitmap;
         // CONSTRUCTOR ++++++++++++++++++++++
         constructor() {
             super();
@@ -15,6 +15,8 @@ module scenes {
         // Start Method
         public start(): void {    
 
+          
+            
             
             // add the WELCOME Label to the MENU scene
             this._welcomeLabel = new objects.Label(

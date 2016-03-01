@@ -33,7 +33,9 @@ var assetData:objects.Asset[] = [
     {id: "Orange", src:"../../Assets/images/Orange.png"},
     {id: "Bar", src:"../../Assets/images/Bar.png"},
     {id: "Bell", src:"../../Assets/images/Bell.png"},
-    {id: "Seven", src:"../../Assets/images/Seven.png"}
+    {id: "Seven", src:"../../Assets/images/Seven.png"},
+    {id: "Menu", src:"../../Assets/images/Menu.png"}
+    
     
 ];
 
