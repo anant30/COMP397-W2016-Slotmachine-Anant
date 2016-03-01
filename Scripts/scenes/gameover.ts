@@ -15,7 +15,7 @@ module scenes {
         // Start Method
         public start(): void {    
             
-            // add the WELCOME Label to the MENU scene
+            // add the Game Over Label to the MENU scene
             this._gameOverLabel = new objects.Label(
                 "GAME OVER", 
                 "60px Consolas", 
@@ -49,7 +49,7 @@ module scenes {
         
         // START Button click event handler
         private _startOverButtonClick(event: createjs.MouseEvent) {
-            // Switch to the LEFT_CAVE Scene
+            // Switch to the SLOT_MACHINE Scene
             scene = config.Scene.SLOT_MACHINE;
             changeScene();
         }

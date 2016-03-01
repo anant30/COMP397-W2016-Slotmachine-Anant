@@ -42,22 +42,22 @@ module scenes {
             this.addChild(this._backgroundImage);
             
             // add Bet1Button to the scene
-            this._bet1Button = new objects.Button("Bet1Button", 168, 382, false);
+            this._bet1Button = new objects.Button("Bet1Button", 150, 400, false);
             this.addChild(this._bet1Button);
             this._bet1Button.on("click", this._bet1ButtonClick, this); 
             
             // add Bet10Button to the scene
-            this._bet10Button = new objects.Button("Bet10Button", 240, 382, false);
+            this._bet10Button = new objects.Button("Bet10Button", 222, 400, false);
             this.addChild(this._bet10Button);
             this._bet10Button.on("click", this._bet10ButtonClick, this); 
             
             // add Bet100Button to the scene
-            this._bet100Button = new objects.Button("Bet100Button", 312, 382, false);
+            this._bet100Button = new objects.Button("Bet100Button", 294, 400, false);
             this.addChild(this._bet100Button);
             this._bet100Button.on("click", this._bet100ButtonClick, this); 
             
             // add SpinButton to the scene
-            this._spinButton = new objects.Button("SpinButton", 402, 382, false);
+            this._spinButton = new objects.Button("SpinButton", 366, 400, false);
             this.addChild(this._spinButton);
             this._spinButton.on("click", this._spinButtonClick, this); 
         
@@ -66,7 +66,7 @@ module scenes {
                 this.jackpot.toString(),
                 "14px Consolas",
                 "#ff0000",
-                353, 107, false);
+                315, 107, false);
             this._jackpotText.textAlign = "right";
             this.addChild(this._jackpotText);
         
@@ -75,7 +75,7 @@ module scenes {
                 this.playerMoney.toString(),
                 "14px Consolas",
                 "#ff0000",
-                254, 303, false);
+                210, 336, false);
             this._creditsText.textAlign = "right";
             this.addChild(this._creditsText);
             
@@ -84,7 +84,7 @@ module scenes {
                 this.playerBet.toString(),
                 "14px Consolas",
                 "#ff0000",
-                351, 303, false);
+                307, 336, false);
             this._betText.textAlign = "right";
             this.addChild(this._betText);
             
@@ -93,7 +93,7 @@ module scenes {
                 this.winnings.toString(),
                 "14px Consolas",
                 "#ff0000",
-                450, 303, false);
+                404, 336, false);
             this._resultText.textAlign = "right";
             this.addChild(this._resultText);
         
@@ -254,7 +254,7 @@ module scenes {
             this._reels = new Array<createjs.Bitmap>();
             for (var reel: number = 0; reel < 3; reel++) {
                 this._reels[reel] = new createjs.Bitmap(assets.getResult("Blank"));
-                this._reels[reel].x = 216 + (reel * 84);
+                this._reels[reel].x = 190 + (reel * 89);
                 this._reels[reel].y = 220;
                 this.addChild(this._reels[reel]);
                 console.log("reel" + reel + " " + this._reels[reel]);
